@@ -1,0 +1,52 @@
+/* CSS for styling the player list */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for player list */
+.player-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Each player item box */
+.player-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Player image styling */
+.player-image img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Player name and details */
+.player-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.player-details p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Adding some space between the elements */
+.player-details p strong {
+    font-weight: bold;
+}

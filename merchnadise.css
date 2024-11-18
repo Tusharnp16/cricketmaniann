@@ -1,0 +1,111 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #07bd8d;
+}
+
+.maniamer{
+    color: blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-justify:inter-ideograph;
+    text-align: center;
+    
+    
+}
+
+.equipment-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 20px;
+    justify-content: space-between; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+}
+
+.equipment-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 20px;
+    width: calc(33.33% - 20px); /* Makes the items take up 1/3 of the row, with space for margins */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    transition: transform 0.3s ease;
+}
+
+
+.equipment-item:hover {
+    transform: translateY(-10px);
+}
+
+
+.equipment-image {
+    width: 40%;
+    height: 150px;
+    padding-right: 20px;
+}
+
+.equipment-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+
+.equipment-details {
+    width: 60%;
+}
+
+
+.equipment-details h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+.equipment-details p {
+    color: #555;
+    font-size: 1em;
+    margin: 15px 0;
+}
+
+/* Price Style */
+.equipment-details p strong {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Buy Button Style */
+.buy-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover Effect for Buy Button */
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design - For smaller screens (tablets and mobile devices) */
+@media (max-width: 768px) {
+    .equipment-item {
+        width: calc(50% - 20px); /* Two items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .equipment-item {
+        width: 100%; /* One item per row on very small screens */
+    }
+}
