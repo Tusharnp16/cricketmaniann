@@ -6,12 +6,11 @@ include("connection.php");
 if(isset($_POST['submit'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $address = $_POST['address'];
+    $state = $_POST['address'];
     $mobile = $_POST['mobile'];
     $gender = $_POST['gender'];
     $nationality = $_POST['nationality'];
     $types = $_POST['types'];
-    $board = $_POST['board'];
     $password = $_POST['password'];
     $confirmp = $_POST['confirmp'];
 
@@ -20,7 +19,7 @@ if(isset($_POST['submit'])) {
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     
-        $query = "INSERT INTO players VALUES (0,'$name', '$email', '$address', $mobile, '$gender', '$nationality','$board', '$types', '$hashed_password')";
+        $query = "INSERT INTO coach VALUES (0,'$name', '$email', '$state', $mobile, '$gender', '$nationality','$board', '$types', '$hashed_password')";
 
 
         if(mysqli_query($conn,$query)){

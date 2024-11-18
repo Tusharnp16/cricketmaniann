@@ -99,7 +99,8 @@
     <div class="container">
         <div class="registration-form">
             <h2 class="form-title">Cricket Registration</h2>
-            <form action="registraction.php" method="post" enctype="multipart/form-data">
+            <h4 class="form-title">Coach Registration</h4>
+            <form action="registraction2.php" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="name" class="label">Name:</label>
                     <input type="text" class="form-control" id="name" name="name" required>
@@ -124,10 +125,10 @@
                     <label for="sex" class="label">Gender :</label>
                     <div class="form-groupp">
                     <label for="one">Male</label>
-                    <input type="radio" id="gender" name="gender" value="1" />
+                    <input type="radio" id="gender" name="gender" value="Male" />
 
                     <label for="two">Female</label>
-                    <input type="radio" id="gender" name="gender" value="2" />
+                    <input type="radio" id="gender" name="gender" value="Female" />
 
                 </div>
                 </div>
@@ -140,11 +141,12 @@
                 <div class="form-group">
                     <label for="category" class="label">Type:</label>
                     <select class="form-control" id="types" name="types" required>
-                        <option value="">Select Type</option>
-                        <option value="coach">Batsmen</option>
-                        <option value="player">Bowler</option>
-                        <option value="player">All-Rounder</option>
-                        <option value="player">Wk-Batsmen</option>
+                        <option value="">Select Coaching Type</option>
+                        <option value="Head Coach">Head Coach</option>
+                        <option value="Batting">Batting Coach</option>
+                        <option value="Pace Bowling">Fast Bowling Coach</option>
+                        <option value="Spin Bowling">Spin Bowling Coach</option>
+                        <option value="Assistant Coach">Assistant Coach</option>
                     </select>
                 </div>
                 <div class="form-group">
