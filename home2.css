@@ -125,38 +125,3 @@ footer a {
     color: #fff;
     text-decoration: none;
 }
-
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    /* Ensures borders are merged */
-    margin: 20px 0;
-    /* Adds some space around the table */
-}
-
-/* Table header styling */
-th {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    text-align: left;
-}
-
-/* Table cell styling */
-td {
-    padding: 8px;
-    border: 1px solid #ddd;
-    /* Adds borders to cells */
-    text-align: left;
-}
-
-/* Row styling for alternate rows */
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tr:hover {
-    background-color: #ddd;
-    /* Highlights row on hover */
-}
