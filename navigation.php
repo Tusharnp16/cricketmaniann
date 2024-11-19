@@ -21,7 +21,7 @@
                 <div class="logo">
                     <h1>Cricket Mania</h1>
                 </div>
-                <li><a href="#home">Home</a></li>
+                <li><a href="homee.php">Home</a></li>
                 <li>
                     <a href="coachshow.php">Coaches</a>
                 </li>
@@ -55,7 +55,7 @@
                 <li class="dropdown">
                     <a href="#more">More</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#about">About Us</a></li>
+                        <li><a href="aboutus.php">About Us</a></li>
                         <li><a href="contactus.php">Contact Us</a></li>
                         <li><a href="feedback.php">Feedback</a></li>
                     </ul>

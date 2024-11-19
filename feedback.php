@@ -22,8 +22,11 @@ if (isset($_POST['submit'])) {
 <html>
 <head>
     <title>Feedback Form</title>
+    <link rel="stylesheet" type="text/css" href="feedback.css">
+    
 </head>
 <body>
+
 <?php include 'navigation.php'; ?>
 
     <h2>Feedback Form</h2>

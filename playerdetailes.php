@@ -56,15 +56,6 @@
     $conn->close();
     ?>
 
-<div id="footer"></div>
-
-<script>
-    fetch('footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer').innerHTML = data;
-        });
-</script>
 <?php include 'footer.html'; ?>
 
 </body>
