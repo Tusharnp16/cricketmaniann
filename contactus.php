@@ -26,6 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Contact Us</title>
 </head>
 <body>
+<?php include 'navigation.php'; ?>
+
     <h2>Contact Us</h2>
     <form method="POST" action="contactus.php">
         <label for="name">Name:</label><br>
@@ -42,5 +44,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         <input type="submit" name="submit" value="Send">
     </form>
+    <?php include 'footer.html'; ?>
 </body>
 </html>

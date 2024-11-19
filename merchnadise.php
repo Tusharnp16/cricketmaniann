@@ -16,6 +16,7 @@
 </head>
 
 <body>
+<?php include 'navigation.php'; ?>
 
 
     <?php
@@ -52,6 +53,8 @@
 
     $conn->close();
     ?>
+
+<?php include 'footer.html'; ?>
 
 </body>
 

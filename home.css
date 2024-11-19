@@ -1,3 +1,4 @@
+/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +13,7 @@ body {
 
 /* Header and Navigation */
 header {
+    position: fixed;
     top: 0;
     background-color: #0288d1;
     color: black;
@@ -26,7 +28,7 @@ header {
 }
 
 nav {
-  
+    position: fixed;
     font-weight: bold;
     flex-grow: 1; /* Make the nav grow to take remaining space */
     text-align: center;
@@ -99,13 +101,27 @@ nav ul .dropdown-menu li a:hover {
     transition: all 0.3s ease;
 }
 
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #0288d1;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
 
 html, body {
     height: 100%;
     margin: 0;
 }
-
-
 
 @media (max-width: 768px) {
     nav ul {

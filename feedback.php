@@ -24,6 +24,8 @@ if (isset($_POST['submit'])) {
     <title>Feedback Form</title>
 </head>
 <body>
+<?php include 'navigation.php'; ?>
+
     <h2>Feedback Form</h2>
     <form method="POST" action="feedback.php">
         <label for="name">Name:</label><br>
@@ -37,5 +39,6 @@ if (isset($_POST['submit'])) {
         
         <input type="submit"  name="submit" value="Submit">
     </form>
+    <?php include 'footer.html'; ?>
 </body>
 </html>

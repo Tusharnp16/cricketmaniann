@@ -77,6 +77,8 @@ $conn->close();
     <title>Add Cricket Equipment</title>
 </head>
 <body>
+<?php include 'navigation.php'; ?>
+
     <h2>Add Cricket Equipment</h2>
     <form method="POST" action="" enctype="multipart/form-data">
         <label for="name">Equipment Name:</label><br>
@@ -93,5 +95,6 @@ $conn->close();
 
         <input type="submit" value="Add Equipment">
     </form>
+    <?php include 'footer.html'; ?>
 </body>
 </html>

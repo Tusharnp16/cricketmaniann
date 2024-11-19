@@ -16,6 +16,8 @@
 </head>
 
 <body>
+<?php include 'navigation.php'; ?>
+
 
     <?php
 
@@ -63,6 +65,7 @@
             document.getElementById('footer').innerHTML = data;
         });
 </script>
+<?php include 'footer.html'; ?>
 
 </body>
 

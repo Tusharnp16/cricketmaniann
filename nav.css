@@ -1,42 +1,40 @@
+/* General styles */
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    margin-bottom: 20px;
     font-family: Arial, sans-serif;
     background-color: white;
     color: #333;
 }
 
-/* Header and Navigation */
-header {
-    top: 0;
-    background-color: #0288d1;
-    color: black;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-   
-}
-
 .logo h1 {
     font-size: 24px;
+    text-align: left;
 }
 
 nav {
-  
+    top: 0;
+    left: 0;
+    width: 100%;
     font-weight: bold;
-    flex-grow: 1; /* Make the nav grow to take remaining space */
+    flex-grow: 1;
     text-align: center;
+    background-color: #0288d1;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
+
 
 nav ul {
     justify-content: center;
     list-style: none;
-    display:flex;
-    position:relative;
+    display: flex;
+    position: relative;
 }
 
 nav ul li {
@@ -45,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-    
+
     color: black;
     text-decoration: blueviolet;
     font-size: 18px;
@@ -55,10 +53,11 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Dropdown menu */
+
 nav ul .dropdown:hover .dropdown-menu {
     display: block;
 }
+
 
 nav ul .dropdown-menu {
     display: none;
@@ -98,14 +97,6 @@ nav ul .dropdown-menu li a:hover {
     margin: 5px;
     transition: all 0.3s ease;
 }
-
-
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-
 
 @media (max-width: 768px) {
     nav ul {

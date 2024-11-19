@@ -1,0 +1,26 @@
+html, body {
+    height: 100%; /* Ensure the body and html elements take full viewport height */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Set the page as a flex container */
+    flex-direction: column; /* Stack children vertically */
+}
+
+body {
+    flex: 1;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; }
+
+.footer {
+    color: black;
+    width: 100%;
+    background-color: #0288d1;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure the footer is positioned relative to the body */
+    margin-top: auto; /* Push the footer to the bottom of the page */
+}
