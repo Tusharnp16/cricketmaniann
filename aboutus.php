@@ -31,12 +31,12 @@
                     <p>Founder & Backend Engineer</p>
                 </div>
                 <div class="team-member">
-                    <img src="uploads/tony.jpeg"  alt="Team Member 2">
+                    <img src="uploads/player.png"  alt="Team Member 2">
                     <h3>Jane Smith</h3>
                     <p>Chief Operating Officer</p>
                 </div>
                 <div class="team-member">
-                    <img src="uploads/tony.jpeg" alt="Team Member 3">
+                    <img src="uploads/player.png" alt="Team Member 3">
                     <h3>Mike Taylor</h3>
                     <p>Head of Content</p>
                 </div>
