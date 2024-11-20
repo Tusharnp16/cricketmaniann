@@ -17,7 +17,7 @@
     <!-- Include navigation -->
     <?php include 'navigation.php'; ?>
 
-    <header>
+    <header class="headingn">
         <h1 style="text-align: center; margin: 20px 0; color: #333;">Cricket Players List</h1>
     </header>
 

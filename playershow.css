@@ -27,13 +27,20 @@
             border-radius: 5px;
         }
 
+        .headingn{
+               text-shadow: #333;
+               font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+               font-weight: bold;
+               font-style: italic;
+    
+        }
 
         /* Container for player list */
         .player-list {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 20px;
+            padding: 10px;
         }
 
         /* Each player item box */
@@ -42,12 +49,20 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 20px;
-            width: 280px;
+            margin: 5px 20px;
+            width: 350px;
             padding: 20px;
             text-align: center;
             transition: transform 0.2s;
         }
+
+        .player-details h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            width: 100%;
+            text-align: center; 
+        }
+        
 
         .player-item:hover {
             transform: scale(1.05);
@@ -55,6 +70,7 @@
 
         /* Player image styling */
         .player-image img {
+            text-align: center;
             width: 100%;
             max-width: 200px;
             height: auto;
@@ -64,6 +80,8 @@
 
         /* Player details styling */
         .player-details {
+            text-align: left;
+            display: block;
             margin: 10px;
             padding: 10px;
             color: #333;

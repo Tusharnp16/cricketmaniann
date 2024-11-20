@@ -46,7 +46,7 @@
             echo "<p><strong>Mobile:</strong> " . htmlspecialchars($row['mobile']) . "</p>";
             echo "<p><strong>Gender:</strong> " . htmlspecialchars($row['gender']) . "</p>";
             echo "<p><strong>Coaching Type:</strong> " . htmlspecialchars($row['type']) . "</p>";
-            echo "<button type='submit' name='update' class='btn' style='background-color: blue; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;'>Book Session</button>";
+            echo "<button type='submit' name='update' class='btn'  onclick='showAlert()' style='background-color: blue; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;'>Book Session</button>";
             echo "</div>";
             echo "</div>";
 

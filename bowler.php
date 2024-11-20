@@ -18,6 +18,10 @@
 <body>
     <?php include 'navigation.php'; ?>
 
+    <header class="headingn">
+        <h1 style="text-align: center; margin: 20px 0; color: #333;">Bowler List</h1>
+    </header>
+
 
     <?php
 

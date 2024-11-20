@@ -2,7 +2,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: red;
     margin: 0;
     padding: 0;
 }
@@ -10,10 +10,11 @@ body {
 .main-container {
     width: 90%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifx;
     text-align: center;
     margin-bottom: 40px;
 }

@@ -3,11 +3,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #07bd8d;
+
 }
 
 .maniamer{
-    color: blueviolet;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     text-justify:inter-ideograph;
@@ -82,7 +82,7 @@ body {
 
 /* Buy Button Style */
 .buy-button {
-    background-color: #007bff;
+    background-color: #dfa60b;
     border: none;
     color: white;
     padding: 10px;
