@@ -13,9 +13,9 @@ html, body {
     min-height: auto; }
 
 .footer {
-    color: black;
+    color: whitesmoke;
     width: 100%;
-    background-color: #0288d1;
+    background-color: #343a40;
     text-align: center;
     padding: 10px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);

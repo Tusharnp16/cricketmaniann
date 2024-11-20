@@ -1,52 +1,122 @@
-/* CSS for styling the player list */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
 
-/* Container for player list */
-.player-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
+        /* Navigation styling (assuming navigation.php includes a menu) */
+        nav {
+            background-color: #007bff;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-/* Each player item box */
-.player-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    width: 280px;
-    padding: 20px;
-    text-align: center;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+        }
 
-/* Player image styling */
-.player-image img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
+        nav a:hover {
+            background-color: #0056b3;
+            border-radius: 5px;
+        }
 
-/* Player name and details */
-.player-details h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
 
-.player-details p {
-    font-size: 1.1em;
-    color: #333;
-}
+        /* Container for player list */
+        .player-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
 
-/* Adding some space between the elements */
-.player-details p strong {
-    font-weight: bold;
-}
+        /* Each player item box */
+        .player-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .player-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Player image styling */
+        .player-image img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Player details styling */
+        .player-details {
+            margin: 10px;
+            padding: 10px;
+            color: #333;
+        }
+
+        .player-details h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .player-details p {
+            font-size: 1.1em;
+            margin: 8px 0;
+        }
+
+        .player-details p strong {
+            font-weight: bold;
+        }
+
+        /* Contact button styling */
+        .contact-button {
+            display: inline-block;
+            background-color: #007bff;
+            /* Blue color */
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #0056b3;
+            /* Darker blue */
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }

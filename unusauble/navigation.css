@@ -1,45 +1,42 @@
-/* General styles */
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.mania {
-    color: white;
-    text-align: left;
-    margin-right: 20px;
-    position: absolute; 
-    left: 0;
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
 }
 
+/* Header and Navigation */
+header {
+    top: 0;
+    background-color: #343a40;
+    color: black;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.logo h1 {
+    font-size: 24px;
+}
 
 nav {
-    top: 0;
-    left: 0;
-    width: 100%;
+  
     font-weight: bold;
-    flex-grow: 1;
+    flex-grow: 1; /* Make the nav grow to take remaining space */
     text-align: center;
-    background-color: #343a40;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 18px;
 }
 
 nav ul {
     justify-content: center;
     list-style: none;
-    display: flex;
-    position: relative;
+    display:flex;
+    position:relative;
 }
 
 nav ul li {
@@ -48,8 +45,8 @@ nav ul li {
 }
 
 nav ul li a {
-
-    color: whitesmoke;
+    
+    color: black;
     text-decoration: blueviolet;
     font-size: 18px;
 }
@@ -58,18 +55,16 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-
+/* Dropdown menu */
 nav ul .dropdown:hover .dropdown-menu {
     display: block;
 }
-
 
 nav ul .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    color: whitesmoke;
     background-color: #343a40;
     padding: 10px;
     list-style: none;
@@ -81,7 +76,7 @@ nav ul .dropdown-menu li {
 }
 
 nav ul .dropdown-menu li a {
-    color: whitesmoke;
+    color: 343a40;
     text-decoration: none;
     font-size: 16px;
 }
@@ -89,6 +84,27 @@ nav ul .dropdown-menu li a {
 nav ul .dropdown-menu li a:hover {
     text-decoration: underline;
 }
+
+/* Burger icon */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 
 
 @media (max-width: 768px) {
@@ -108,7 +124,7 @@ nav ul .dropdown-menu li a:hover {
         top: 60px;
         right: 0;
         width: 100%;
-        background-color: #343a40;
+        background-color: #0288d1;
         padding: 20px;
     }
 

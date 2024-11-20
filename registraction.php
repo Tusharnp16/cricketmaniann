@@ -20,7 +20,7 @@ if(isset($_POST['submit'])) {
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     
-        $query = "INSERT INTO players VALUES (0,'$name', '$email', '$address', $mobile, '$gender', '$nationality','$board', '$types', '$hashed_password')";
+        $query = "INSERT INTO players VALUES (0,'$name', '$email', '$address', $mobile, '$gender', '$nationality','$board', '$types','$hashed_password')";
 
 
         if(mysqli_query($conn,$query)){

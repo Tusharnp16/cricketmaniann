@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Players</title>
+    <title>Cricket Allrounders</title>
     <link rel="stylesheet" type="text/css" href="playershow.css">
+
     <script>
         function showAlert() {
             alert('Item Not available currently!');
@@ -18,15 +19,15 @@
     <?php include 'navigation.php'; ?>
 
     <header>
-        <h1 style="text-align: center; margin: 20px 0; color: #333;">Cricket Players List</h1>
+        <h1 style="text-align: center; margin: 20px 0; color: #333;">Cricket Allrounders List</h1>
     </header>
 
     <main>
         <?php
         include("connection.php");
 
-        // Query to fetch player data
-        $query = "SELECT * FROM players";
+        // Query to fetch all-rounder players
+        $query = "SELECT * FROM players WHERE type='Allrounder'";
         $result = $conn->query($query);
 
         if ($result->num_rows > 0) {
@@ -45,19 +46,22 @@
                 echo "</div>";
                 echo "<div class='player-details'>";
                 echo "<h3>" . htmlspecialchars($row['name']) . "</h3>";
-                echo "<p><strong>Address:</strong> " . htmlspecialchars($row['address']) . "</p>";
-                echo "<p><strong>Mobile:</strong> " . htmlspecialchars($row['mobile']) . "</p>";
+                echo "<p><strong>Email:</strong> " . htmlspecialchars($row['email']) . "</p>";
                 echo "<p><strong>Gender:</strong> " . htmlspecialchars($row['gender']) . "</p>";
+                echo "<p><strong>State:</strong> " . htmlspecialchars($row['address']) . "</p>";
+                echo "<p><strong>Mobile:</strong> " . htmlspecialchars($row['mobile']) . "</p>";
                 echo "<p><strong>Nationality:</strong> " . htmlspecialchars($row['nationality']) . "</p>";
                 echo "<p><strong>Type:</strong> " . htmlspecialchars($row['type']) . "</p>";
+                echo "<p><strong>Board:</strong> " . htmlspecialchars($row['board']) . "</p>";
                 echo "<a href='#' class='contact-button' onclick='showAlert()'>Contact Player</a>";
+               
                 echo "</div>";
                 echo "</div>";
             }
 
             echo "</div>";
         } else {
-            echo "<p style='text-align: center; font-size: 1.2em; color: #666;'>No players found.</p>";
+            echo "<p style='text-align: center; font-size: 1.2em; color: #666;'>No allrounder players found.</p>";
         }
 
         $conn->close();

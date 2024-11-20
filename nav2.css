@@ -1,52 +1,66 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: #333;
-}
-
-/* Header and Navigation */
-header {
-    top: 0;
-    background-color: #0288d1;
-    color: black;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-   
-}
-
-.logo h1 {
-    font-size: 24px;
+.mania {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    margin-right: 5px;
+    position: absolute; 
+   left: 0;
+   padding-left: 10px;
 }
 
 nav {
-  
-    font-weight: bold;
-    flex-grow: 1; /* Make the nav grow to take remaining space */
+    height: 50px;
+    background-color: #007bff;
+    padding: 10px 0;
     text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: center;
+    background-color: #343a40;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
 }
 
 nav ul {
     justify-content: center;
     list-style: none;
-    display:flex;
-    position:relative;
+    display: flex;
+    position: relative;
 }
 
 nav ul li {
-    margin-left: 20px;
+    padding: 5px 0px;
+    margin-left: 10px;
     position: relative;
 }
 
 nav ul li a {
-    
-    color: black;
+    color: whitesmoke;
     text-decoration: blueviolet;
     font-size: 18px;
 }
@@ -55,20 +69,22 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Dropdown menu */
+
 nav ul .dropdown:hover .dropdown-menu {
     display: block;
 }
+
 
 nav ul .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #0288d1;
-    padding: 10px;
+    color: whitesmoke;
+    background-color: #343a40;
+    padding: 0%;
     list-style: none;
-    width: 180px;
+    width: 200px;
 }
 
 nav ul .dropdown-menu li {
@@ -76,7 +92,7 @@ nav ul .dropdown-menu li {
 }
 
 nav ul .dropdown-menu li a {
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
     font-size: 16px;
 }
@@ -84,27 +100,6 @@ nav ul .dropdown-menu li a {
 nav ul .dropdown-menu li a:hover {
     text-decoration: underline;
 }
-
-/* Burger icon */
-.burger {
-    display: none;
-    cursor: pointer;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
 
 
 @media (max-width: 768px) {
@@ -124,7 +119,7 @@ html, body {
         top: 60px;
         right: 0;
         width: 100%;
-        background-color: #0288d1;
+        background-color: #343a40;
         padding: 20px;
     }
 

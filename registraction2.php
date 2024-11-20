@@ -10,7 +10,9 @@ if(isset($_POST['submit'])) {
     $mobile = $_POST['mobile'];
     $gender = $_POST['gender'];
     $nationality = $_POST['nationality'];
+    $board = $_POST['board'];
     $types = $_POST['types'];
+    $experience = $_POST['experience'];
     $password = $_POST['password'];
     $confirmp = $_POST['confirmp'];
 
@@ -19,7 +21,7 @@ if(isset($_POST['submit'])) {
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     
-        $query = "INSERT INTO coach VALUES (0,'$name', '$email', '$state', $mobile, '$gender', '$nationality','$board', '$types', '$hashed_password')";
+        $query = "INSERT INTO coach VALUES (0,'$name', '$email', '$state', $mobile, '$gender', '$nationality','$board', '$types','$experience', '$hashed_password')";
 
 
         if(mysqli_query($conn,$query)){
