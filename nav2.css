@@ -10,9 +10,22 @@
     color: white;
     text-align: left;
     margin-right: 5px;
-    position: absolute; 
-   left: 0;
-   padding-left: 10px;
+    position: absolute;
+    left: 0;
+    padding-left: 10px;
+}
+
+.sessionname {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    margin-right: 5px;
+    position: absolute;
+    right: 0;
+    padding-left: 10px;
+
 }
 
 nav {
@@ -96,6 +109,8 @@ nav ul .dropdown-menu li a {
     text-decoration: none;
     font-size: 16px;
 }
+
+
 
 nav ul .dropdown-menu li a:hover {
     text-decoration: underline;

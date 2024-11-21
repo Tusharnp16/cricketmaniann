@@ -1,100 +1,91 @@
-<?php
-
-include("connection.php");
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $description = $_POST['description'];
-    $price = $_POST['price'];
-
-    
-    $target_dir = "uploads/";
-    $target_file = $target_dir . basename($_FILES["image"]["name"]);
-    $uploadOk = 1;
-    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-
-  
-    $check = getimagesize($_FILES["image"]["tmp_name"]);
-    if ($check !== false) {
-        $uploadOk = 1;
-    } else {
-        echo "File is not an image.";
-        $uploadOk = 0;
-    }
-
-   
-    if (file_exists($target_file)) {
-        echo "Sorry, file already exists.";
-        $uploadOk = 0;
-    }
-
-    
-    if ($_FILES["image"]["size"] > 5000000) {
-        echo "Sorry, your file is too large.";
-        $uploadOk = 0;
-    }
-
-   
-    if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif") {
-        echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-        $uploadOk = 0;
-    }
-
-   
-    if ($uploadOk == 0) {
-        echo "Sorry, your file was not uploaded.";
-    } else {
-        
-        if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
-            
-            $query = "INSERT INTO equipment VALUES (0,?, ?, ?, ?)";
-            $stmt = $conn->prepare($query);
-
-            if ($stmt) {
-                $stmt->bind_param("ssds", $name, $description, $price, $target_file);
-                if ($stmt->execute()) {
-                    echo "New cricket equipment added successfully!";
-                } else {
-                    echo "Error: " . $stmt->error;
-                }
-                $stmt->close();
-            } else {
-                echo "Error preparing the statement: " . $conn->error;
-            }
-        } else {
-            echo "Sorry, there was an error uploading your file.";
-        }
-    }
-}
-
-$conn->close();
-?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Add Cricket Equipment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4CAF50;
+            margin-top: 20px;
+        }
+
+        form {
+            background: #fff;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"], input[type="number"], textarea, input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004a99;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
 <?php include 'navigation.php'; ?>
 
     <h2>Add Cricket Equipment</h2>
-    <form method="POST" action="" enctype="multipart/form-data">
-        <label for="name">Equipment Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+    <div class="container">
+        <form method="POST" action="" enctype="multipart/form-data">
+            <label for="name">Equipment Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="description">Description:</label><br>
-        <textarea id="description" name="description" required></textarea><br><br>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
 
-        <label for="price">Price:</label><br>
-        <input type="number" id="price" name="price" step="0.01" required><br><br>
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" step="0.01" required>
 
-        <label for="image">Upload Image:</label><br>
-        <input type="file" id="image" name="image" accept="image/*" required><br><br>
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
 
-        <input type="submit" value="Add Equipment">
-    </form>
-    <?php include 'footer.html'; ?>
+            <input type="submit" value="Add Equipment">
+        </form>
+    </div>
+    <footer>
+        <?php include 'footer.html'; ?>
+    </footer>
 </body>
 </html>

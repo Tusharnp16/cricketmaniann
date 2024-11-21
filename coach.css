@@ -1,0 +1,103 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Main container for the player list */
+.player-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Card container for each player */
+.player-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+/* Image section */
+.player-image {
+    flex: 1;
+    max-width: 200px;
+    padding: 10px;
+}
+
+.player-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Info section */
+.player-details {
+    flex: 2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Heading for player name */
+.player-details h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Styling for the info paragraphs */
+.player-details p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Button styling */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .player-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .player-image {
+        max-width: 150px;
+    }
+
+    .player-details {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .player-details h3 {
+        font-size: 20px;
+    }
+}

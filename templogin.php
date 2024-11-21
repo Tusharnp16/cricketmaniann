@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
                 $_SESSION['name'] = $row['name']; 
                 $_SESSION['type'] = $type;
 
-                header("Location: home.php");
+                header("Location: temphome.php");
                 exit;
             } else {
                 echo "Invalid password please!";
@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
                 $_SESSION['name'] = $row['name']; 
                 $_SESSION['type'] = $type;
 
-                header("Location: home.php");
+                header("Location: temphome.php");
                 exit;
             } else {
                 echo "Invalid password please!";

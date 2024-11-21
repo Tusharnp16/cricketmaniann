@@ -21,7 +21,7 @@ if(isset($_POST['submit'])) {
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     
-        $query = "INSERT INTO coach VALUES (0,'$name', '$email', '$state', $mobile, '$gender', '$nationality','$board', '$types','$experience', '$hashed_password')";
+        $query = "INSERT INTO coach VALUES (0,'$name', '$email', '$state', $mobile, '$gender', '$nationality','$board', '$types','$experience',0,'$hashed_password')";
 
 
         if(mysqli_query($conn,$query)){

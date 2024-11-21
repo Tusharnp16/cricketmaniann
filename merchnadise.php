@@ -23,7 +23,7 @@
 
     include("connection.php");
 
-    $query = "SELECT * FROM equipment";
+    $query = "SELECT name,description,price,imgurl FROM equipment";
     $result = $conn->query($query);
 
     if ($result->num_rows > 0) {

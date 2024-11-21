@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cricket Equipment</title>
-    <link rel="stylesheet" type="text/css" href="playershow.css">
+    <link rel="stylesheet" type="text/css" href="coach.css">
 
     <script>
 
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<?php include 'navigation.php'; ?>
+    <?php include 'navigation.php'; ?>
 
 
     <?php
@@ -46,7 +46,12 @@
             echo "<p><strong>Mobile:</strong> " . htmlspecialchars($row['mobile']) . "</p>";
             echo "<p><strong>Gender:</strong> " . htmlspecialchars($row['gender']) . "</p>";
             echo "<p><strong>Coaching Type:</strong> " . htmlspecialchars($row['type']) . "</p>";
-            echo "<button type='submit' name='update' class='btn'  onclick='showAlert()' style='background-color: blue; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;'>Book Session</button>";
+            echo "<td>
+            <form method='POST' action='update.php'>
+                <input type='hidden' name='id' value='" . htmlspecialchars($row['id']) . "'>
+                <button type='submit' class='btn'>Update</button>
+            </form>
+          </td>";
             echo "</div>";
             echo "</div>";
 
@@ -60,7 +65,7 @@
     $conn->close();
     ?>
 
-<?php include 'footer.html'; ?>
+    <?php include 'footer.html'; ?>
 
 </body>
 

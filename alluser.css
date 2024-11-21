@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+    margin: 20px 0;
+    color: #4CAF50;
+}
+
+.player-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.player-table th, .player-table td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.player-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.player-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.player-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.player-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.delete-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.delete-button:hover {
+    background-color: #4CAF50;
+    cursor: pointer;
+}

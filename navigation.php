@@ -12,6 +12,14 @@
 <body>
 
     <?php
+    session_start();
+
+    
+    $isAdmin = isset($_SESSION['type']) && $_SESSION['type'] === 'admin';
+    $name = $_SESSION['name'];
+    ?>
+
+    <?php
     $current_page = basename($_SERVER['PHP_SELF']);
     ?>
     <header>
@@ -60,10 +68,25 @@
                         <li><a href="contactus.php">Contact Us</a></li>
                         <li><a href="feedback.php">Feedback</a></li>
                     </ul>
-
                 </li>
 
+                <ul>
+                    <?php
 
+                    if ($isAdmin): ?>
+                        <li class="dropdown">
+                            <a href="#more">Admin Panel</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="addequiments.php">Add Product</a></li>
+                                <li><a href="adminmerchnadise.php">View Products</a></li>
+                                <li><a href="alluser.php">View User</a></li>
+                            </ul>
+                        </li>
+                    <?php endif; ?>
+                </ul>
+                <div class="logo">
+                    <h1 class="sessionname"><?php $name ?></h1>
+                </div>
             </ul>
         </nav>
         <div class="burger">
@@ -72,6 +95,7 @@
             <div class="line3"></div>
         </div>
     </header>
+
 
 
 
