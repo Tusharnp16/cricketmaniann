@@ -82,7 +82,7 @@ body {
 
 /* Buy Button Style */
 .buy-button {
-    background-color: #dfa60b;
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 10px;
@@ -94,7 +94,7 @@ body {
 
 /* Hover Effect for Buy Button */
 .buy-button:hover {
-    background-color: #0056b3;
+    background-color: #4CAF50;
 }
 
 /* Responsive Design - For smaller screens (tablets and mobile devices) */

@@ -4,7 +4,7 @@ include("connection.php");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id = intval($_POST['id']); // Sanitize user input
 
-    $query = "Update coach set bsession=1 WHERE id = ?";
+    $query = "Update coach set bsession=bsession + 1 WHERE id = ?";
     $stmt = $conn->prepare($query);
     $stmt->bind_param("i", $id);
 

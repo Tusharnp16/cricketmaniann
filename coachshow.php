@@ -10,7 +10,7 @@
     <script>
 
         function showAlert() {
-            alert('Item Not available currently!');
+            alert('Your request has been sent we shortly contact you');
         }
     </script>
 </head>
@@ -49,7 +49,7 @@
             echo "<td>
             <form method='POST' action='update.php'>
                 <input type='hidden' name='id' value='" . htmlspecialchars($row['id']) . "'>
-                <button type='submit' class='btn'>Update</button>
+                <button type='submit' onclick='showAlert()' class='btn'>Contact</button>
             </form>
           </td>";
             echo "</div>";
