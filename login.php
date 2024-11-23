@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
             $result2 = $stmt2->get_result();
 
             if ($result2->num_rows > 0) {
-               
+
                 $_SESSION['name'] = $row['name']; 
                 $_SESSION['type'] = $type;
 
@@ -44,7 +44,8 @@ if (isset($_POST['submit'])) {
             }
         } else {
             if (password_verify($password, $row['password'])) {
-                
+
+               
                 $_SESSION['name'] = $row['name']; 
                 $_SESSION['type'] = $type;
 

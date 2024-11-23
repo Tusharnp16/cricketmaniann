@@ -85,6 +85,18 @@ nav ul .dropdown-menu li a:hover {
     text-decoration: underline;
 }
 
+.sessionname{
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+    border: 2px solid #000; /* Black border, you can change the color */
+    border-radius: 50%;
+    display: inline-block;
+    color: aqua;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    font-style: italic;
+
+}
+
 /* Burger icon */
 .burger {
     display: none;

@@ -13,11 +13,15 @@
 
     <?php
     session_start();
-
-    
     $isAdmin = isset($_SESSION['type']) && $_SESSION['type'] === 'admin';
-    $name = $_SESSION['name'];
+    if (isset($_SESSION['name'])) {
+        $name = $_SESSION['name'];
+    } else {
+        $name = "Guest";
+    }
+
     ?>
+
 
     <?php
     $current_page = basename($_SERVER['PHP_SELF']);
@@ -84,8 +88,18 @@
                         </li>
                     <?php endif; ?>
                 </ul>
-                <div class="logo">
-                    <h1 class="sessionname"><?php $name ?></h1>
+                <div class='sessionname'>;
+                    <?php
+
+                    if ($name == "Guest")
+
+                        echo "Hii,Guest";
+                    else {
+                        echo "Hii, " . htmlspecialchars($name);
+
+                    }
+
+                    ?>
                 </div>
             </ul>
         </nav>
