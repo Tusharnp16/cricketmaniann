@@ -80,6 +80,7 @@ body {
     background-color: #4CAF50;
 }
 
+
 /* Media query for responsiveness */
 @media (max-width: 768px) {
     .player-item {
