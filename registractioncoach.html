@@ -5,38 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Registration</title>
-    <style type="text/css">
+    <style>
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             display: flex;
-            justify-content: flex-end;
-            /* Aligns the form to the right */
-            align-items: center;
+            justify-content: center; /* Center the form horizontally */
+            align-items: center; /* Center the form vertically */
             min-height: 100vh;
-            background-image: url('https://img.freepik.com/premium-photo/icc-world-cup-cricket-stadium-background-with-flag-trophy-vector-wallpaper-design-illustration_837518-24209.jpg?semt=ais_hybrid');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+            background: #f0f8ff;
         }
 
         .container {
-            width: 100%;
             max-width: 400px;
-            /* Limits the width of the form */
+            width: 100%;
             padding: 20px;
             background-color: rgba(245, 249, 252, 0.9);
-            /* semi-transparent white */
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-            margin-right: 20px;
-            /* Adds spacing from the right edge */
         }
 
         .form-title {
@@ -46,18 +37,18 @@
         }
 
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .form-groupp {
             border: 1px solid #ccc;
             border-radius: 4px;
-            background-color: white;
-            margin-bottom: 20px;
-            height: 30px;
             padding: 5px 10px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
-
 
         .label {
             display: block;
@@ -112,8 +103,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="address" class="label">State :</label>
-                    <input type="text" class="form-control" id="address" name="address" required></textarea>
+                    <label for="address" class="label">State:</label>
+                    <input type="text" class="form-control" id="address" name="address" required>
                 </div>
 
                 <div class="form-group">
@@ -122,24 +113,24 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="sex" class="label">Gender :</label>
+                    <label class="label">Gender:</label>
                     <div class="form-groupp">
-                    <label for="one">Male</label>
-                    <input type="radio" id="gender" name="gender" value="Male" />
-
-                    <label for="two">Female</label>
-                    <input type="radio" id="gender" name="gender" value="Female" />
-
+                        <label>
+                            <input type="radio" name="gender" value="Male" required> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="Female" required> Female
+                        </label>
+                    </div>
                 </div>
-                </div>
-               
+
                 <div class="form-group">
                     <label for="nationality" class="label">Nationality:</label>
                     <input type="text" class="form-control" id="nationality" name="nationality" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="category" class="label">Type:</label>
+                    <label for="types" class="label">Type:</label>
                     <select class="form-control" id="types" name="types" required>
                         <option value="">Select Coaching Type</option>
                         <option value="Head Coach">Head Coach</option>
@@ -151,9 +142,10 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="category" class="label">Experience:</label>
-                    <select class="form-control" id="types" name="experience" required>
-                        <option value="0 - 5 Year">0 - 5  Year</option>
+                    <label for="experience" class="label">Experience:</label>
+                    <select class="form-control" id="experience" name="experience" required>
+                        <option value="">Select Experience</option>
+                        <option value="0 - 5 Year">0 - 5 Year</option>
                         <option value="5 - 10 Year">5 - 10 Year</option>
                         <option value="10 - 15 Year">10 - 15 Year</option>
                         <option value="15+">15+ Year</option>
@@ -161,7 +153,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="board" class="label">Cricket Board : </label>
+                    <label for="board" class="label">Cricket Board:</label>
                     <input type="text" class="form-control" id="board" name="board" required>
                 </div>
 
@@ -171,7 +163,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="confirm_password" class="label">Confirm Password:</label>
+                    <label for="confirmp" class="label">Confirm Password:</label>
                     <input type="password" class="form-control" id="confirmp" name="confirmp" required>
                 </div>
 

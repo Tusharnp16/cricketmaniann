@@ -65,6 +65,7 @@
 
                     </ul>
                 </li>
+                <li><a href="profile.php">Profile</a></li>
                 <li class="dropdown">
                     <a href="#more">More</a>
                     <ul class="dropdown-menu">
@@ -109,8 +110,4 @@
             <div class="line3"></div>
         </div>
     </header>
-
-
-
-
 </html>
