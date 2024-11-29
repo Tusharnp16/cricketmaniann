@@ -9,7 +9,7 @@
 
     <script>
         function showAlert() {
-            alert('Item Not available currently!');
+            alert('Your request has been sent we shortly contact you');
         }
     </script>
 </head>
@@ -54,7 +54,7 @@
                 echo "<p><strong>Type:</strong> " . htmlspecialchars($row['type']) . "</p>";
                 echo "<p><strong>Board:</strong> " . htmlspecialchars($row['board']) . "</p>";
                 echo "<a href='#' class='contact-button' onclick='showAlert()'>Contact Player</a>";
-               
+
                 echo "</div>";
                 echo "</div>";
             }

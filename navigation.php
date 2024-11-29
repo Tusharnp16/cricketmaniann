@@ -53,7 +53,7 @@
                         <li><a href="merchnadise.php">Merchandise</a></li>
                     </ul>
                 </li>
-                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="profile.php">Profile</a></li>
                 <li class="dropdown">
                     <a href="#login">Login</a>
                     <ul class="dropdown-menu">

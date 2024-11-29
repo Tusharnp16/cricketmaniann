@@ -65,10 +65,11 @@
             echo "<td>
             <form method='POST' action='delete.php'>
                 <input type='hidden' name='id' value='" . htmlspecialchars($row['id']) . "'>
+                  <input type='hidden' name='table' value='coach'>
                 <button type='submit' class='delete-button'>Delete</button>
             </form>
           </td>";
-          echo "</tr>";
+            echo "</tr>";
         }
 
         echo "</tbody>";
@@ -126,6 +127,7 @@
             echo "<td>
             <form method='POST' action='delete.php'>
                 <input type='hidden' name='id' value='" . htmlspecialchars($row['id']) . "'>
+                <input type='hidden' name='table' value='players'>
                 <button type='submit' class='delete-button'>Delete</button>
             </form>
           </td>";
@@ -176,6 +178,7 @@
             echo "<td>
             <form method='POST' action='delete.php'>
                 <input type='hidden' name='id' value='" . htmlspecialchars($row['id']) . "'>
+                <input type='hidden' name='table' value='admin'>
                 <button type='submit' class='delete-button'>Delete</button>
             </form>
           </td>";

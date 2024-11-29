@@ -8,9 +8,8 @@
     <link rel="stylesheet" type="text/css" href="playershow.css">
 
     <script>
-
         function showAlert() {
-            alert('Item Not available currently!');
+            alert('Your request has been sent we shortly contact you');
         }
     </script>
 </head>
