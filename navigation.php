@@ -85,6 +85,8 @@
                                 <li><a href="addequiments.php">Add Product</a></li>
                                 <li><a href="adminmerchnadise.php">View Products</a></li>
                                 <li><a href="alluser.php">View User</a></li>
+                                <li><a href="adminfeedback.php">View Feedback</a></li>
+                                <li><a href="admincotauct.php">View ContactUs</a></li>
                             </ul>
                         </li>
                     <?php endif; ?>

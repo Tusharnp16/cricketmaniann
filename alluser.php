@@ -65,7 +65,7 @@
             echo "<td>
             <form method='POST' action='delete.php'>
                 <input type='hidden' name='id' value='" . htmlspecialchars($row['id']) . "'>
-                  <input type='hidden' name='table' value='coach'>
+                <input type='hidden' name='table' value='coach'>
                 <button type='submit' class='delete-button'>Delete</button>
             </form>
           </td>";

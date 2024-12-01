@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $table = $_POST['table']; // Get the table name from the form
 
     // Validate the table name to prevent SQL injection
-    $allowedTables = ['coach', 'players', 'admin'];
+    $allowedTables = ['coach', 'players', 'admin', 'feedback', 'contact'];
     if (!in_array($table, $allowedTables)) {
         die("Invalid table name.");
     }
@@ -16,10 +16,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $conn->prepare($query);
     $stmt->bind_param("i", $id);
 
+
+
     if ($stmt->execute()) {
-        // Redirect back to the main page with a success message
-        header("Location: alluser.php");
-        exit();
+
+        if ($table == 'feedback') {
+            header("Location: adminfeedback.php");
+
+        } else if ($table == 'contact') {
+            header("Location: admincotauct.php");
+
+        } else {
+
+            header("Location: alluser.php");
+            exit();
+        }
     } else {
         echo "Error deleting record: " . $conn->error;
     }
