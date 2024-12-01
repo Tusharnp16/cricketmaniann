@@ -6,6 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cricket Equipment</title>
     <link rel="stylesheet" type="text/css" href="coach.css">
+    <style>
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .search-input {
+            width: 50%;
+            max-width: 600px;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:hover,
+        .search-input:focus {
+            border-color: #007bff;
+            box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.2);
+        }
+    </style>
     <script>
         // Function to handle search input
         function searchCoaches() {
@@ -22,45 +48,18 @@
             xhr.send(); // Send the request
         }
     </script>
-    <style>
-    .search-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-    }
-
-    .search-input {
-    width: 50%;
-    max-width: 600px;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    outline: none;
-    transition: all 0.3s ease;
-    }
-
-    .search-input:hover,
-    .search-input:focus {
-    border-color: #007bff;
-    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.2);
-    }
-    </style>
 
 </head>
 
 <body>
     <?php include 'navigation.php'; ?>
 
-    <!-- Search Bar -->
+
     <div class="search-bar">
         <input type="text" id="search" onkeyup="searchCoaches()" placeholder="Search by coach name, state, or type..."
             class="search-input" />
     </div>
 
-    <!-- Div to Display Coach List -->
     <div id="coach-list">
         <?php
         include("connection.php");

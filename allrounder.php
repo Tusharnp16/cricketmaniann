@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <!-- Include navigation -->
+
     <?php include 'navigation.php'; ?>
 
     <header class="headingn">
@@ -26,20 +26,17 @@
         <?php
         include("connection.php");
 
-        // Query to fetch all-rounder players
         $query = "SELECT * FROM players WHERE type='Allrounder'";
         $result = $conn->query($query);
 
         if ($result->num_rows > 0) {
             echo "<div class='player-list'>";
 
-            // Iterate through the player data
+
             while ($row = $result->fetch_assoc()) {
 
-                // Placeholder image path (replace if actual image paths are available)
                 $image_url = "uploads/player.png";
 
-                // Player card
                 echo "<div class='player-item'>";
                 echo "<div class='player-image'>";
                 echo "<img src='" . htmlspecialchars($image_url) . "' alt='" . htmlspecialchars($row['name']) . "' />";
@@ -53,7 +50,7 @@
                 echo "<p><strong>Nationality:</strong> " . htmlspecialchars($row['nationality']) . "</p>";
                 echo "<p><strong>Type:</strong> " . htmlspecialchars($row['type']) . "</p>";
                 echo "<p><strong>Board:</strong> " . htmlspecialchars($row['board']) . "</p>";
-                echo "<a href='#' class='contact-button' onclick='showAlert()'>Contact Player</a>";
+                echo "<a href='#' class='contact-button' style='background-color: #4CAF50;'  onclick='showAlert()'>Contact Player</a>";
 
                 echo "</div>";
                 echo "</div>";

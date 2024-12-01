@@ -36,6 +36,7 @@ if (isset($_POST['submit'])) {
 
                 $_SESSION['name'] = $row['name']; 
                 $_SESSION['type'] = $type;
+                $_SESSION['email'] = $email;
 
                 header("Location: home.php");
                 exit;
@@ -48,6 +49,7 @@ if (isset($_POST['submit'])) {
                
                 $_SESSION['name'] = $row['name']; 
                 $_SESSION['type'] = $type;
+                $_SESSION['email'] = $row['email'];
 
                 header("Location: home.php");
                 exit;

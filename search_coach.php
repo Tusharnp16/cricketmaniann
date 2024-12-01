@@ -8,7 +8,7 @@ $searchQuery = isset($_GET['search']) ? htmlspecialchars($_GET['search']) : "";
 if ($searchQuery !== "") {
     $query = "SELECT * FROM coach 
               WHERE name LIKE ? 
-              OR state LIKE ? 
+              OR charge LIKE ? 
               OR type LIKE ?";
     $stmt = $conn->prepare($query);
     $searchTerm = '%' . $searchQuery . '%';

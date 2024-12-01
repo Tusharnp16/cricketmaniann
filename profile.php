@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['name']) || !isset($_SESSION['type'])) {
-    header("Location: login.php");
+    header("Location: login.html");
     exit();
 }
 
@@ -10,6 +10,7 @@ include("connection.php");
 
 $type = $_SESSION['type'];
 $name = $_SESSION['name'];
+
 
 
 if ($type == 'admin') {
@@ -66,7 +67,7 @@ $conn->close();
             text-align: center;
             margin-bottom: 20px;
             font-weight: bold;
-            color: #007bff;
+            color: #4CAF50;
         }
 
         .form-group {
@@ -81,11 +82,21 @@ $conn->close();
         label {
             font-weight: bold;
         }
+
+        .btn {
+            background-color: #4CAF50;
+            border: none;
+        }
     </style>
 </head>
 
 <body>
+
+
+    <?php include 'navigation.php'; ?>
+
     <div class="container">
+
         <div class="profile-form">
             <h2 class="form-title"><?php echo ucfirst($type); ?> Profile</h2>
             <form>

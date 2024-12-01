@@ -34,7 +34,6 @@
                font-style: italic;
     
         }
-
         /* Container for player list */
         .player-list {
             display: flex;
@@ -104,8 +103,7 @@
         /* Contact button styling */
         .contact-button {
             display: inline-block;
-            background-color: #007bff;
-            /* Blue color */
+            background-color: #4CAF50;
             color: #fff;
             font-size: 16px;
             padding: 10px 20px;
@@ -118,7 +116,7 @@
         }
 
         .contact-button:hover {
-            background-color: #0056b3;
+            background-color: #4CAF50;
             /* Darker blue */
         }
 

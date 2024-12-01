@@ -12,7 +12,7 @@
 <body>
 
     <?php
-    session_start();
+    @session_start();
     $isAdmin = isset($_SESSION['type']) && $_SESSION['type'] === 'admin';
     if (isset($_SESSION['name'])) {
         $name = $_SESSION['name'];
@@ -31,6 +31,7 @@
         <nav>
             <ul class="nav-links">
                 <div class="logo">
+               
                     <h1 class="mania">Cricket Mania</h1>
                 </div>
                 <li><a href="home.php">Home</a></li>
@@ -88,7 +89,7 @@
                         </li>
                     <?php endif; ?>
                 </ul>
-                <div class='sessionname'>;
+                <div class='sessionname'>
                     <?php
 
                     if ($name == "Guest")

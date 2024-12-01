@@ -50,7 +50,7 @@
             echo "<p><strong>Nationality:</strong> " . htmlspecialchars($row['nationality']) . "</p>";
             echo "<p><strong>Type:</strong> " . htmlspecialchars($row['type']) . "</p>";
             echo "<p><strong>Board:</strong> " . htmlspecialchars($row['board']) . "</p>";
-            echo "<a href='#' class='contact-button' onclick='showAlert()'>Contact Player</a>";
+            echo "<a href='#' class='contact-button'  style='background-color: #4CAF50;' onclick='showAlert()'>Contact Player</a>";
             echo "</div>";
             echo "</div>";
         }

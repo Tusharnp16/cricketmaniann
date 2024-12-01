@@ -31,14 +31,14 @@
                     <p>Founder & Backend Engineer</p>
                 </div>
                 <div class="team-member">
-                    <img src="uploads/player.png"  alt="Team Member 2">
-                    <h3>Jane Smith</h3>
-                    <p>Chief Operating Officer</p>
+                    <img src="uploads/admin2.jpg"  alt="Team Member 2">
+                    <h3>Akash Kumar</h3>
+                    <p>CEO & Frontend Engineer</p>
                 </div>
                 <div class="team-member">
-                    <img src="uploads/player.png" alt="Team Member 3">
-                    <h3>Mike Taylor</h3>
-                    <p>Head of Content</p>
+                    <img src="uploads/admin3.jpg" alt="Team Member 3">
+                    <h3>Madhav Vala</h3>
+                    <p>Head of Content & Marketing</p>
                 </div>
             </div>
         </div>
