@@ -7,6 +7,13 @@
     <title>Cricket Mania</title>
     <link rel="stylesheet" href="nav2.css">
 
+    <script>
+    (function (w, d) {
+        w.CollectId = "674d98b28272c8d2e7e359d5"; var h = d.head || d.getElementsByTagName("head")[0];
+        var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); 
+        s.async = true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); 
+        h.appendChild(s); })(window, document);</script>
+
 </head>
 
 <body>
@@ -31,7 +38,7 @@
         <nav>
             <ul class="nav-links">
                 <div class="logo">
-               
+
                     <h1 class="mania">Cricket Mania</h1>
                 </div>
                 <li><a href="home.php">Home</a></li>
